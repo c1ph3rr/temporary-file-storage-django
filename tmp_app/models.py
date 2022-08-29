@@ -1,11 +1,7 @@
-from datetime import timedelta
-from django.utils import timezone
 from django.db import models
+from .utils import default_expiry
 
 # Create your models here.
-
-def default_expiry():
-    return timezone.now() + timedelta(minutes=1)
 
 class StorageModel(models.Model):
     file_id = models.IntegerField(primary_key=True)
