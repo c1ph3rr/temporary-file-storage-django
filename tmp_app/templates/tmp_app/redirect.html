@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>{{ model.file.name }}</title>
+{% endblock %}
+
+{% block content %}
+    <div class='container mt-4'>
+        <p>Filename:  {{ model.file.name }}</p>
+        <p>Size:  {{ model.file.size|filesizeformat }}</p>
+        <p>URL:  <a target='_blank' href="{{ model.url }}" download>http://127.0.0.1:8000{{ model.url }}</a></p>
+        <p>Uploaded at:  {{ model.uploaded_time }}</p>
+        <p>Expires at:  {{ model.expires_on }}</p>
+    </div>
+{% endblock %}
