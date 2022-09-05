@@ -3,6 +3,7 @@
 
 {% block content %}
     <div class='container'>
+        <p class='mt-4 mb-1'>All uploaded files are automatically deleted after 60 minutes.</p>
         {% csrf_token %}
         {% crispy form %}
     </div>
