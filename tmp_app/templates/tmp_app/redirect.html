@@ -11,5 +11,8 @@
         <p>URL:  <a target='_blank' href="{{ model.url }}" download>http://127.0.0.1:8000{{ model.url }}</a></p>
         <p>Uploaded at:  {{ model.uploaded_time }}</p>
         <p>Expires at:  {{ model.expires_on }}</p>
+    
+        <a href="{% url 'index' %}" class="btn btn-primary">Upload another file</a>
+    
     </div>
 {% endblock %}
