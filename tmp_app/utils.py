@@ -12,7 +12,7 @@ def slugify_filename(filename):
 
 
 def default_expiry():
-    return timezone.now() + timedelta(minutes=1)
+    return timezone.now() + timedelta(minutes=60)
 
 
 # def add_random_string(name):

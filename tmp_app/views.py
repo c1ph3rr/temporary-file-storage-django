@@ -46,6 +46,3 @@ def redirect(request, file_id, file_name):
         })
     except StorageModel.DoesNotExist:
         raise Http404
-
-
-#unique ids or unique names
